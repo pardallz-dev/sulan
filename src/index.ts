@@ -1,8 +1,3 @@
 import { bootstrap } from "#base";
-import { startServer } from "#server";
 
-await bootstrap({ 
-    meta: import.meta,
-    whenReady: startServer,
-    loadLogs: true,
-});
+await bootstrap({ meta: import.meta });
